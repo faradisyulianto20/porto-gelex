@@ -1,0 +1,161 @@
+.Contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .Contact-container {
+
+        input, textarea, button {
+            all: unset;
+        }
+
+        width: 70%;
+
+        .Contact-heading {
+            font-size: clamp(1.5rem, 5vw, 3.5rem);
+            font-weight: bold;
+            text-align: center;
+            margin: 2em 0em 1em 0em;
+        }
+    
+        .Contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 3em;
+    
+            .Contact-identity {
+
+                    .Contact-name {
+                        // border: 1px solid #ffffff;
+                        padding: 0.7em 1em;
+                        width: fit-content;
+                        border-radius: 4em;
+                    }
+            
+                    .Contact-email {
+                        // border: 1px solid #ffffff;
+                        padding: 0.7em 1em;
+                        width: fit-content;
+                        border-radius: 4em;
+                    }    
+            }
+    
+            .Contact-message-container {
+                display: flex;
+                gap: 1em;
+    
+                .Contact-button {
+                    // border: 1px solid #ffffff;
+                    background-color: #ffffff;
+                    border-radius: 100%;
+                    margin-top: auto;
+                    width: 5em;
+                    height: 4em;
+    
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    // box-shadow: 1px 1px 10px 2px rgba(255, 255, 255, 0.5);
+    
+                    .Contact-message-icon {
+                        width: 2em;
+                        cursor: pointer;
+                        margin: auto 0em auto 0.5em;
+                        align-items: center;
+                    }
+                }
+    
+                .Contact-button:hover {
+                    background-color: #999999;
+                }
+    
+            }
+
+            textarea {
+                border: 1px solid #ffffff;
+                width: 100%;
+                border-radius: 4em;
+                padding: 1em 0em 0.8em 3em;
+                height: 2em;
+            }
+    
+            input:focus, textarea:focus {
+                outline: none; /* Removes default focus outline */
+            }
+        }
+    }
+}
+
+
+.container-succed {
+    background-color: #f0f8ff;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+
+    .title-succed {
+        color: #000000;
+    }
+      
+      
+    .confirm-succed {
+        background-color: #000000;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+      
+    .confirm-succed:hover {
+        background-color: #000000;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+    /* Gaya CSS untuk layar kecil */
+    .Contact {
+        .Contact-container {
+            width: 80vw;
+        }
+
+    }
+    
+}
+  
+  /* Tablet */
+@media screen and (max-width: 1024px) {
+    .Contact {
+        .Contact-container {
+            .Contact-form {
+                .Contact-message-container {
+        
+                    .Contact-button {
+                        width: 4em;
+                        height: 3em;
+        
+                        .Contact-message-icon {
+                            width: 1em;
+                            margin: auto 0em auto 0.2em;
+                        }
+                    }
+                }
+                textarea {
+                    padding: 0.5em 0em 1em 1em;
+                    height: 1.2em;
+                }
+            }
+        }
+    }
+    /* Gaya CSS untuk tablet */
+}
+  
+  /* Laptop/Desktop */
+@media screen and (min-width: 1280px) {
+    /* Gaya CSS untuk laptop/desktops */
+}
+  

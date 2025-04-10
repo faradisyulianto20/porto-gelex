@@ -1,0 +1,13 @@
+.heading {
+    font-size: clamp(1.5rem, 5vw, 3.5rem);
+    font-weight: bold;
+    text-align: center;
+    margin: 2em 0em 1em 0em;
+}
+
+.Projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}

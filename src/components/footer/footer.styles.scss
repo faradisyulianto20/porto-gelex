@@ -1,0 +1,17 @@
+.Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3em;
+    margin: 7em 0em 0em 0em;
+    gap: 2em;
+
+    p {
+        color: #555;
+    }
+    
+    .Social-media {
+        width: fit-content;
+    }
+}

@@ -1,0 +1,51 @@
+.Navbar {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    gap: 3em;
+    background-color: #ffffff00;
+    padding: 1em 2em;
+    border-radius: 2em;
+    width: fit-content;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 1em;
+    box-shadow: 1px 1px 10px 0.05px rgba(255, 255, 255, 0.8);
+    z-index: 10;
+
+
+    a {
+        text-decoration: none; /* Removes underlining */
+        color: inherit; /* Inherit the color from the parent element */
+        outline: none; /* Removes the default outline on focus */
+        border: none; /* Remove any borders */
+    }
+    
+    p {
+        color: #ffffff;
+        cursor: pointer;
+        margin: 0;
+        font-weight: 300;
+    }
+
+    p:hover {
+        text-shadow:1px 1px 10px rgba(255, 255, 255, 0.8);
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+    /* Gaya CSS untuk layar kecil */
+}
+  
+  /* Tablet */
+@media screen and (max-width: 1024px) {
+    /* Gaya CSS untuk tablet */
+    .Navbar {
+        visibility: hidden;
+    }
+}
+  
+  /* Laptop/Desktop */
+@media screen and (min-width: 1280px) {
+    /* Gaya CSS untuk laptop/desktops */
+}

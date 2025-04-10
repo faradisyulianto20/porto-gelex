@@ -1,0 +1,49 @@
+.Skills {
+
+    align-self: center;
+    display: flex;
+    width: 80%;
+    height: fit-content;
+    overflow: hidden;
+    margin: 2em auto;
+    // border: 1px solid #ccc;
+    justify-content: center;
+    height: fit-content;
+  
+  .Skill {
+    display: inline-block;
+    animation: scroll-left-right 40s linear infinite;
+
+        img {
+            width: 8em;
+            z-index: 5;
+        }
+  }
+  
+  .Skill div {
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    background-color: #f0f0f0;
+    margin-right: 10px;
+  }
+    
+  @keyframes scroll-left-right {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(100%);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    75% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+}

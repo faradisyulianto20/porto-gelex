@@ -1,0 +1,77 @@
+
+
+.Card {
+    border: 1px solid #ffffff;
+    background-color: #ffffff15;
+    padding: 1em 3em;
+    height: 20em;
+    // backdrop-filter: blur(10px);
+    overflow: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 1em;
+    scrollbar-width: none;
+
+    .Card-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5em;
+        text-align: center;
+        height: 4em;
+        font-weight: bold;
+    }
+    .Card-paragraph {
+        margin-bottom: 2em;
+    }
+
+    .Card-anchor {
+    align-self: center;
+
+        .Card-button {
+            width: fit-content;
+            margin-top: auto;
+            margin-bottom: 3em;
+            padding: 0.5em 1em;
+            cursor: pointer;
+            background-color: #00000000; /* Green background */
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+            color: #ffffff; /* White text */
+            border: none; /* No border */
+            text-align: center; /* Center the text */
+            text-decoration: none; /* Remove underline from text */
+            display: inline-block; /* Make the button inline */
+            font-size: 16px; /* Increase font size */
+            border-radius: 1em; /* Rounded corners */
+            transition: all 0.3s ease; /* Smooth transition for hover effect */
+            box-shadow: 1px 1px 5px 0.1px rgba(255, 255, 255, 0.8);
+        }
+
+        .Card-button:hover {
+            background-color: #ffffff;
+            color: #000000;
+            // text-shadow: 1px 1px 10px rgba(0,0,0, 0.8);
+        }
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+    /* Gaya CSS untuk layar kecil */
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    .Card {
+        padding: 1em;
+    }
+    /* Gaya CSS untuk tablet */
+}
+
+/* Laptop/Desktop */
+@media screen and (min-width: 1280px) {
+    /* Gaya CSS untuk laptop/desktops */
+}
+  

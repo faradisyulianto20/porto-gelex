@@ -1,0 +1,42 @@
+
+.Experience-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .heading {
+        font-size: clamp(1.5rem, 5vw, 3.5rem);
+        font-weight: bold;
+        text-align: center;
+        margin: 2em 0em 1em 0em;
+    }
+
+    .Experiences {
+        width: fit-content;
+        display: grid;
+        gap: 1em;
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+        
+/* Mobile */
+@media screen and (max-width: 480px) {
+    /* Gaya CSS untuk layar kecil */
+}
+  
+  /* Tablet */
+@media screen and (max-width: 1024px) {
+    /* Gaya CSS untuk tablet */
+    .Experience-section {
+        .Experiences {
+            grid-template-columns: none;
+            grid-template-rows: 1fr 1fr;
+        }
+    }
+}
+  
+  /* Laptop/Desktop */
+@media screen and (min-width: 1280px) {
+    /* Gaya CSS untuk laptop/desktops */
+}  

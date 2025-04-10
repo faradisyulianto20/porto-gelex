@@ -1,0 +1,31 @@
+.SocialMedia-container {
+    display: flex; 
+    gap: 1em;
+    width: fit-content;
+
+    .SocialMedia {
+        button {
+            background-color: #e6e5dd;
+            padding: 0;
+            border: none;
+            width: 3em;
+            height: 3em;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.4s ease-in-out;
+
+            img {
+                width: 2em;
+            }
+        }
+
+        button:hover {
+            background-color: #999999;
+            transform: scale(1.2);
+        }
+    }
+}
+    

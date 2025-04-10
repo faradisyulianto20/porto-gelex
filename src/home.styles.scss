@@ -1,0 +1,224 @@
+* {
+    scroll-behavior: smooth;
+}
+
+.Home {
+    color: #ffffff;
+    padding: 0em 5em;
+    // content: '';
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+
+    // width: 100%;
+    // height: 600%;
+    background-image: url('./assets/images/background5.svg');
+    // background-color: #000000;
+    background-size: cover;                   
+    background-position: center;                   
+    background-repeat: no-repeat; 
+    z-index: -1;
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+    // .Home {
+    //     width: 100%;
+    // }
+    /* Gaya CSS untuk layar kecil */
+}
+  
+  /* Tablet */
+@media screen and (max-width: 1024px) {
+    /* Gaya CSS untuk tablet */
+    .Home {
+        padding: 0em 3em;
+    }
+}
+  
+  /* Laptop/Desktop */
+@media screen and (min-width: 1280px) {
+    /* Gaya CSS untuk laptop/desktops */
+}
+
+@keyframes ani-scale {
+    from {
+        opacity: 0;
+        scale: 0.8;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes ani-left {
+    from {
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes ani-right {
+    from {
+        opacity: 0;
+        transform: translateX(10%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes ani-up {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes ani-down {
+    from {
+        opacity: 0;
+        transform: translateY(-30%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes ani-scale-scroll {
+    0% {
+        opacity: 0;
+        scale: 0;
+    }
+    20% {
+        opacity: 0;
+        scale: 0.8;
+    }
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes ani-left-scroll {
+    0% {
+        opacity: 0;
+        transform: translateX(0%);
+    }
+    20% {
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes ani-right-scroll {
+    0% {
+        opacity: 0;
+        transform: translateX(0%);
+    }
+    20% {
+        opacity: 0;
+        transform: translateX(10%);
+    }
+    100%  {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes ani-up-scroll {
+    0% {
+        opacity: 0;
+        transform: translateY(0%);
+    }
+    20%  {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes ani-down-scroll {
+    0% {
+        opacity: 0;
+        transform: translateY(0%);
+    }
+    20% {
+        opacity: 0;
+        transform: translateY(-30%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+// --------------------------------------------------------------------
+
+.ani-scale-open {
+    animation: ani-scale 1s linear;
+    animation-timeline: open();
+}
+  
+.ani-down-open {
+    animation: ani-down 1s linear;
+    animation-timeline: open();
+}
+
+.ani-left-open {
+    animation: ani-left 1s linear;
+    animation-timeline: open();
+}
+
+.ani-right-open {
+    animation: ani-right 1s linear;
+    animation-timeline: open();
+}
+
+.ani-scale-scroll {
+    animation: ani-scale-scroll 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+.ani-right-scroll {
+    animation: ani-right-scroll 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+.ani-left-scroll {
+    animation: ani-left-scroll 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+.ani-up-scroll {
+    animation: ani-up-scroll 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+.ani-down-scroll {
+    animation: ani-down-scroll 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
