@@ -1,9 +1,9 @@
 import './project.styles.scss';
 
 import browser from '../../../assets/images/projects/browser.svg';
-import github from '../../../assets/images/projects/github.svg';
+import github_logo from '../../../assets/images/projects/github.svg';
 
-const Project = ({ title, description, image, link }) => {
+const Project = ({ title, description, image, link, github }) => {
   return (
     <div className="Project ani-left-scroll">
       <img src={image} alt={title} />
@@ -19,9 +19,9 @@ const Project = ({ title, description, image, link }) => {
             <img className='Project-button-icon' alt='browser' src={browser} />
           </button>
         </a>
-        <a className='Project-anchor' href={link}>
+        <a className='Project-anchor' href={github}>
           <button className='Project-button'>
-            <img className='Project-button-icon' alt='github' src={github} />
+            <img className='Project-button-icon' alt='github' src={github_logo} />
           </button>
         </a>
       </div>
