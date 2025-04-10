@@ -12,22 +12,22 @@ const SocialMedia = () => {
     const social_media = [
         {
             title: 'linkedin',
-            link: '',
+            link: 'https://www.linkedin.com/in/faradis-yulianto-76274a1b3/',
             image: linkedin
         },
         {
             title: 'instagram',
-            link: '',
+            link: 'https://www.instagram.com/far.adis_/',
             image: instagram
         },
         {
             title: 'github',
-            link: '',
+            link: 'https://github.com/faradisyulianto20',
             image: github
         },
         {
             title: 'gmail',
-            link: '',
+            link: 'mailto:faradisy20@gmail.com',
             image: gmail
         },
     ]
@@ -36,7 +36,7 @@ const SocialMedia = () => {
             {
                 social_media.map(({title, link,image}) => (
                     <div className='SocialMedia'>
-                        <button href={link}><img alt={title} src={image}></img></button>
+                        <a href={link}><button href={link}><img alt={title} src={image}></img></button></a>
                     </div>
                 ))
             }
