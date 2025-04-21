@@ -1,4 +1,4 @@
-import '../../home.styles.scss'
+import '../home/home.styles.scss'
 
 import Heroes from '../../components/heroes/heroes.component'
 import Navbar from '../../components/navbar/navbar.component'
